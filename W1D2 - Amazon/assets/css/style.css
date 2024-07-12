@@ -1,0 +1,137 @@
+/* Resettare la pagina con il CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  --darkest-bg-color: #131921;
+  --darked-bg-color: #242f3e;
+  background-color: aliceblue;
+}
+
+header img {
+  width: 8em;
+  margin: 10px;
+}
+
+header div {
+  background-color: var(--darkest-bg-color);
+  width: 100%;
+}
+
+header nav {
+  background-color: var(--darked-bg-color);
+  color: white;
+  text-align: center;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 15px 15px;
+  font-size: 1.2em;
+}
+
+.footerImg {
+  text-align: center;
+  background-color: var(--darkest-bg-color);
+}
+
+footer img {
+  width: 8em;
+  margin: 10px;
+}
+
+footer div:first-child {
+  text-align: center;
+  background-color: var(--darked-bg-color);
+  padding: 1em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.firstSection {
+  background-color: rgb(237, 103, 55);
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.secondSection {
+  margin: 10px;
+  background-image: url("/assets/img/bg-image.png");
+  background-size: contain;
+  height: 120px;
+  position: relative;
+}
+
+.secondSection div {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: calc(50% - 1rem);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.thirdSection a {
+  color: blue;
+  font-weight: bold;
+}
+
+.thirdSection {
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(104, 103, 103);
+  position: relative;
+}
+
+.thirdSection div:first-child {
+  position: relative;
+  padding: 20px;
+}
+
+.thirdSection img {
+  width: 16%;
+  height: 220px;
+  border-radius: 10px;
+  margin-left: 6em;
+}
+
+.forthSection,
+.fifthSection {
+  width: 100%;
+  padding: 10px;
+}
+
+.forthSection img,
+.fifthSection img {
+  width: 100%;
+  height: 25em;
+
+}
+
+.forthSection,
+.fifthSection {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.forthSection a,
+.fifthSection a{
+  text-decoration: none;
+}
+
+.carousel {
+  margin: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
