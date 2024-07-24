@@ -1,4 +1,4 @@
-// --- M2 - W2D1 [IF/ELSE -- CICLI FOR, WHILE, DO WHILE]
+// --- TITLE: M2 - W2D1 [IF/ELSE -- CICLI FOR, WHILE, DO WHILE]
 
 const PASSKEY = "segreto";
 let tentativo = 4;
@@ -24,7 +24,7 @@ do {
   tentativo++;
 } while (tentativo < 3);
 
-// --- W2D4 [ARRAY]
+// --- TITLE: W2D4 [ARRAY]
 /*
 let studenti = [
     { nome: "Andrei", codStud: "745", voti: [10, 8] },
