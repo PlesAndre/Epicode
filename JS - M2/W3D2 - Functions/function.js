@@ -70,10 +70,14 @@ function crazySum(num1, num2) {
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  function giveMeRandom() {
-    return;
+  function giveMeRandom(n) {
+    const arr = [];
+    for(let i = 0; i <= n; i++) {
+      arr.push(Math.floor(Math.random() * 11))
+    }
+    return arr
   }
-  console.log(Math.floor(Math.random() * 11));
+  console.log(giveMeRandom(3));
   
   //EXTRA:
   /* ESERCIZIO 1
@@ -81,20 +85,43 @@ function crazySum(num1, num2) {
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  
+  function area(l1, l2) {
+    return l1 * l2 
+  }
+  console.log(area(2, 5));
+
   /* ESERCIZIO 2
    Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
    Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  
+  function crazyDiff(n){
+    if(n > 19) {
+      return Math.abs(n - 19) * 3
+    } else {
+      return Math.abs(n - 19)
+    }
+  }
+
+  console.log(crazyDiff(3));
+
   /* ESERCIZIO 3
    Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
-   La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
+   La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato,
+    ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
+  function codify(str) {
+    if(str.startsWith("code")) {
+      return str 
+    } else {
+      return "code" + str
+    }
+  }
+
+  console.log(codify("Ciao a tutti"));
   
   /* ESERCIZIO 4
    Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -103,10 +130,22 @@ function crazySum(num1, num2) {
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  
+  function check3and7(num) {
+    if(num % 3 === 0 || num % 7 === 0) {
+      return true
+    } else {
+      return false
+    }
+    } 
+    console.log(check3and7(4));
+
   /* ESERCIZIO 5
    Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  
+  function cutString(str) {
+    return str.slice(1, str.length - 1)
+  }
+
+  console.log(cutString("Ciao a tutti"));
