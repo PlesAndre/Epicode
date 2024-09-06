@@ -1,0 +1,59 @@
+h1,
+.jumbotron > h1 {
+  border: 3px solid blue;
+}
+
+nav > * {
+  border: 3px solid black;
+}
+
+.jumbotron p:last-child a {
+  background-color: aqua;
+  border: 3px solid red;
+}
+
+main .row .blog-post {
+  border: 3px solid yellow;
+}
+
+main .row .blog-post:not(:first-of-type) {
+  border: 3px solid blue;
+}
+
+/* asterisco seleziona tutti gli elementi presenti? anche quelli che non ci interessano? */
+
+main .row .blog-post:first-of-type hr {
+  background-color: red;
+}
+
+div.containter header.blog-header + nav > :nth-child(even) {
+  border: 3px solid brown;
+}
+
+aside div:nth-child(2) ol li {
+    border: 3px solid green;
+    background-color: blanchedalmond;
+}
+
+/* main div:nth-of-type(2) .blog-post-meta a {
+    background-color: aquamarine;
+} */
+
+main .blog-post:last-of-type ul li:nth-child(2) {
+    background-color: bisque;
+}
+
+footer + a {
+    background-color: blueviolet;
+    color: white; 
+}
+
+main nav a:last-of-type {
+    font-size: 40px;
+}
+
+footer p a:nth-of-type(2) {
+    background-color: blue;
+    color: white;   
+}
+

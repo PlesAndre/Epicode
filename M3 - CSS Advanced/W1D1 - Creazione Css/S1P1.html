@@ -75,6 +75,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
       href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
       rel="stylesheet"
     />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -388,7 +389,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
         <aside class="col-md-4 blog-sidebar">
           <div class="p-4 mb-3 bg-light rounded">
-            <h4 class="font-italic">Glossario</h4>
+            <h4 class="glossario itallico">Glossario</h4>
             <p class="mb-0">
               Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
               mattis consectetur purus sit amet fermentum. Aenean lacinia
@@ -442,8 +443,31 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
       /* JS Exercises should go here */
 
       // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
+      const getTwittterContainer = document.querySelector(
+        "aside div:last-child ol"
+      );
+      const removeTwittter = document.querySelector(
+        "aside div:last-child ol li:nth-of-type(2)"
+      );
+      // Due modi per rimuovere il link Twitter
+      // getTwittterContainer.removeChild(removeTwittter);
+      // removeTwittter.remove();
+
       // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
+      // const firstArticle = document
+      //   .querySelectorAll("body > div:first-child > div:last-of-type > div;").remove();
+
       // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
+      let author = document.querySelectorAll(".blog-post-meta a");
+
+      for(let authors of author){ 
+        authors.addEventListener("mouseover", function(event) {
+          alert(event.target.innerText);
+        })
+      }
+
+      console.log(author);
+
     </script>
   </body>
 </html>
