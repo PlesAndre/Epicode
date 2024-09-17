@@ -1,0 +1,143 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #fffae8;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #feeaa8;
+  border-radius: 100px;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+nav .big-item img {
+  width: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #fcd042;
+}
+
+nav .big-item {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  background-color: #fcd042;
+  margin: 10px;
+
+  flex: 2 0 100px;
+  height: 100px;
+}
+
+.small-item {
+  height: 50px;
+  flex: 1 0 80px;
+  margin: 20px;
+}
+
+nav .big-item a {
+  flex: 2 0 100px;
+  font-size: 20pt;
+}
+
+nav .big-item img {
+  flex: 1 0 40px;
+  padding-left: 30px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.honey-card {
+  width: 20%;
+  background-color: #feeaa8;
+  border-radius: 75px;
+  margin: 60px 0 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+
+.honey-card img {
+  flex: 3 0 250px;
+  object-fit: cover;
+}
+
+.honey-card .all-info {
+  flex: 1 0 80px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.honey-card .add-to-chart {
+  height: 2.5em;
+  margin-bottom: 15px;
+}
+
+.add-to-chart button {
+  border: none;
+  width: 60%;
+  height: 80%;
+  background-color: #fcd042;
+  border-radius: 75px;
+}
+
+main div span {
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4d988;
+  border-radius: 30px;
+  padding: 30px;
+
+  margin-top: 50px;
+}
+article img {
+  width: 20%;
+  margin: 60px;
+}
+
+article .article__text {
+  width: 50%;
+  /* margin: 30px; */
+
+}
+
+#products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
