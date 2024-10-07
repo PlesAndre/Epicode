@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fatto sui gatti random</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fatto casuale sui gatti</h1>
+      <button id="catFact">Genera un fatto casuale</button>
+      <p id="fact"></p>
+    </div>
+
+    <script>
+      const fatto = document.getElementById("fact");
+      const bottone = document.getElementById("catFact");
+
+      bottone.addEventListener("click", () => {
+        // Facciamo una GET all'endpoint "https://catfact.ninja/fact"
+        fetch("https://catfact.ninja/fact")
+          .then((response) => response.json())
+          .then((data) => {
+            fatto.textContent = data.fact;
+          })
+          .catch((error) => {
+            fatto.textContent = "Errore nella chiamata - poveri gatti";
+            console.error("Errore nella chiamata:", error);
+          });
+      });
+    </script>
+  </body>
+</html>
