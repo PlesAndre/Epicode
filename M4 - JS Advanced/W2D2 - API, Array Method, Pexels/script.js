@@ -8,8 +8,8 @@ window.addEventListener("load", function () {
     .then(function (data) {
       return data.json();
     })
-    .then(function(jsonData) {
-        addPhotos(jsonData.photos)
+    .then(function (jsonData) {
+      addPhotos(jsonData.photos);
     });
 });
 

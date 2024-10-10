@@ -1,6 +1,6 @@
 /**
  *
- * ARRAY
+ * --- ARRAY
  * Struttura dati che può contenere più valori
  * in un'unica variabile
  *
@@ -56,7 +56,7 @@ console.log(numeriPari);
 
 /**
  *
- * ESERCIZIO FILTER
+ * --- FILTER
  * Data una lista di persone, filtriamo solo quelle
  * che hanno una età superiore a 20 anni.
  *
@@ -93,7 +93,7 @@ let personeMaggiori = persone.filter(function (element, indice, array) {
 console.log(personeMaggiori);
 
 /**
- * FOREACH
+ * --- FOREACH
  *
  * array.forEach(callback)
  *
@@ -118,7 +118,7 @@ listaNumeri.forEach(function (numero) {
 });
 
 /**
- * MAP
+ * --- MAP
  *
  * let nuovoArray = arrayOriginale.map(callback);
  *
@@ -149,7 +149,7 @@ let quadrati = elencoNumeri.map(function (numero) {
 console.log(quadrati);
 
 /**
- * REDUCE
+ * --- REDUCE
  *
  * let risultato = array.reduce(callback, valoreIniziale);
  *
@@ -185,7 +185,7 @@ let somma = array.reduce(function (accumulatore, element) {
 console.log(somma);
 
 /**
- * JOIN
+ * --- JOIN
  *
  * let stringa = array.join(separatore);
  *
@@ -237,7 +237,6 @@ let nomiUniti = alunni
 // Stampiamo la stringa risultante
 console.log(nomiUniti);
 
-
 // Esercizio eseguito insieme a Simone
 const prendiLista = document.getElementById("listaUtenti");
 
@@ -255,9 +254,7 @@ async function users() {
       return `<li>${current.name}</li>`;
     });
 
-    prendiLista.textContent = nuoviUtenti.join("")
-
-
+    prendiLista.textContent = nuoviUtenti.join("");
   } catch (e) {
     console.error(e);
   }
