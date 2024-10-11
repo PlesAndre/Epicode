@@ -55,8 +55,6 @@ const alunno = {
 
 alunno.salutaCompagni(); // Output: Ciao amici, io sono undefined
 
-
-
 /*
 --- DESTRUTTURAZIONE 
 funzionalità che ci permette di estrarre (in un modo super easy)
@@ -124,8 +122,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
   })
   .catch((error) => console.error("Errore nella fetch:", error));
 
-
-  /*
+/*
 --- SPREADING / SPREAD OPERATOR / ... 
 Funzionalità che ci permette di "ESPANDERE"
 - un array
@@ -168,7 +165,7 @@ const oggettoAggiornato = { ...datiOriginali, ...datiAggiornati };
 console.log(oggettoAggiornato);
 
 // PASSARE ARGOMENTI A FUNZIONI
-const numeri = [1, 2, 3];
+const numeri2 = [1, 2, 3];
 
 // Funzione che somma tre numeri
 function somma(a, b, c) {
@@ -176,15 +173,14 @@ function somma(a, b, c) {
 }
 
 // Usa lo spread per passare gli elementi dell'array come argomenti
-console.log(somma(...numeri));
+console.log(somma(...numeri2));
 
 // ESPANDERE STRINGHE
 const parola = "supercalifragilistichespiralidoso";
 const lettere = [...parola];
 console.log(lettere);
 
-
-// --- ALTRI METODI DEGLI ARRAY 
+// --- ALTRI METODI DEGLI ARRAY
 /*
 --- FIND
 
