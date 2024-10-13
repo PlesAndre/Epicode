@@ -8,6 +8,6 @@
   margin: auto;
 }
 
-.row .col:hover {
+.row #bookCard:hover {
     transform: scale(1.1);
 }
